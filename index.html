@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish Meena</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --card-bg: #ffffff;
+            --text-primary: #2d3748;
+            --text-secondary: #718096;
+            --accent-color: #764ba2;
+            --hover-bg: #f7fafc;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg-gradient);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            width: 100%;
+            max-width: 400px;
+            padding: 40px 20px;
+            border-radius: 24px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .username {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0 0 8px 0;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin: 0 0 32px 0;
+            line-height: 1.6;
+        }
+
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .link-item {
+            display: block;
+            padding: 16px;
+            background-color: white;
+            border: 2px solid #e2e8f0;
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .link-item:hover {
+            background-color: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(118, 75, 162, 0.3);
+        }
+
+        .social-links {
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .social-icon {
+            color: var(--text-secondary);
+            font-size: 24px;
+            transition: color 0.2s, transform 0.2s;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="username">Manish Meena</h1>
+        <p class="bio">contact@ManishMeena.in</p>
+        
+        <div class="link-list">
+            <a href="https://www.useoftools.com/" class="link-item">Online Tools</a>
+            <a href="https://www.famral.com/" class="link-item">Office & Productivity</a>
+            <a href="https://reap2026.in/" class="link-item">REAP 2026 Updates</a>
+            <a href="https://www.sciencebaba.com/" class="link-item">News & Updates</a>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/connectwithman/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/ConnectWithMan" class="social-icon" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/connectwithman/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</body>
+</html>
