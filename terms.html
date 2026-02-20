@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - ManishMeena.in</title>
+    <style>
+        :root { --primary-color: #0f5132; --secondary-color: #198754; --accent-color: #ffc107; --text-dark: #212529; --text-light: #f8f9fa; --bg-light: #f3f4f6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-dark); background-color: #fff; }
+        nav { background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-color); text-decoration: none; }
+        .nav-links a { margin-left: 2rem; text-decoration: none; color: var(--text-dark); font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--secondary-color); }
+        .menu-icon { display: none; font-size: 1.5rem; cursor: pointer; color: var(--primary-color); }
+        .page-header { background-color: var(--bg-light); padding: 4rem 5%; text-align: center; }
+        .page-header h1 { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem; }
+        .content { max-width: 800px; margin: 0 auto; padding: 3rem 5%; font-size: 1rem; line-height: 1.8; }
+        .content h2 { margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-color); }
+        footer { background-color: var(--text-dark); color: var(--text-light); padding: 3rem 5%; text-align: center; }
+        footer a { color: #ccc; text-decoration: none; margin: 0 10px; }
+        @media (max-width: 768px) {
+            .menu-icon { display: block; }
+            .nav-links { display: none; width: 100%; position: absolute; top: 100%; left: 0; background: #fff; flex-direction: column; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 1rem 0; }
+            .nav-links.active { display: flex; }
+            .nav-links a { margin: 0.5rem 0; text-align: center; margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">ManishMeena.in</a>
+        <div class="menu-icon" onclick="document.querySelector('.nav-links').classList.toggle('active')">&#9776;</div>
+        <div class="nav-links"><a href="investing.html">Investing</a><a href="saving.html">Saving</a><a href="retirement.html">Retirement</a><a href="tools.html">Tools</a></div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Terms of Service</h1>
+    </header>
+
+    <section class="content">
+        <p>Last updated: November 2024</p>
+        
+        <h2>1. Terms</h2>
+        <p>By accessing the website at ManishMeena.in, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws.</p>
+
+        <h2>2. Disclaimer</h2>
+        <p>The materials on ManishMeena.in are provided on an 'as is' basis. The content provided is for informational purposes only and should not be construed as professional financial advice. Always consult with a qualified financial advisor before making investment decisions.</p>
+
+        <h2>3. Limitations</h2>
+        <p>In no event shall ManishMeena.in or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on ManishMeena.in.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ManishMeena.in. All rights reserved.</p>
+        <div style="margin-top: 1rem;">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </footer>
+</body>
+</html>

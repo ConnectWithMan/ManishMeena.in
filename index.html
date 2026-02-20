@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManishMeena.in - Master Your Finances</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ManishMeena.in",
+      "url": "https://manishmeena.in"
+    }
+    </script>
+    <style>
+        :root {
+            --primary-color: #0f5132;
+            --secondary-color: #198754;
+            --accent-color: #ffc107;
+            --text-dark: #212529;
+            --text-light: #f8f9fa;
+            --bg-light: #f3f4f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #fff;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .menu-icon { display: none; font-size: 1.5rem; cursor: pointer; color: var(--primary-color); }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 5rem 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--accent-color);
+            color: var(--text-dark);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Featured Section */
+        .container {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .tag {
+            background-color: var(--bg-light);
+            color: var(--secondary-color);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .card h3 {
+            margin: 1rem 0;
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .read-more {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Newsletter */
+        .newsletter {
+            background-color: var(--bg-light);
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 0.8rem;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-dark);
+            color: var(--text-light);
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ccc;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .menu-icon { display: block; }
+            .nav-links { display: none; width: 100%; position: absolute; top: 100%; left: 0; background: #fff; flex-direction: column; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 1rem 0; }
+            .nav-links.active { display: flex; }
+            .nav-links a { margin: 0.5rem 0; text-align: center; margin-left: 0; }
+            .newsletter input[type="email"] { width: 100%; margin-bottom: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ManishMeena.in</a>
+        <div class="menu-icon" onclick="document.querySelector('.nav-links').classList.toggle('active')">&#9776;</div>
+        <div class="nav-links">
+            <a href="investing.html">Investing</a>
+            <a href="saving.html">Saving</a>
+            <a href="retirement.html">Retirement</a>
+            <a href="tools.html">Tools</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Take Control of Your Financial Future</h1>
+        <p>Expert advice on investing, saving, and building wealth for a secure tomorrow.</p>
+        <a href="#" class="btn">Start Learning</a>
+    </header>
+
+    <section class="container">
+        <h2 class="section-title">Latest Insights</h2>
+        <div class="grid">
+            <!-- Article 1 -->
+            <article class="card">
+                <img src="https://placehold.co/400x250?text=Stock+Market" alt="Stock Market">
+                <div class="card-content">
+                    <span class="tag">Investing</span>
+                    <h3>Understanding Market Volatility</h3>
+                    <p>How to stay calm and stick to your strategy when the markets get rough.</p>
+                    <a href="market-volatility.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="card">
+                <img src="https://placehold.co/400x250?text=Budgeting" alt="Budgeting">
+                <div class="card-content">
+                    <span class="tag">Budgeting</span>
+                    <h3>The 50/30/20 Rule Explained</h3>
+                    <p>A simple budgeting framework to help you manage your money effectively.</p>
+                    <a href="50-30-20-rule.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="card">
+                <img src="https://placehold.co/400x250?text=Retirement" alt="Retirement">
+                <div class="card-content">
+                    <span class="tag">Retirement</span>
+                    <h3>401(k) vs. IRA: What's the Difference?</h3>
+                    <p>Deciding which retirement account is right for your financial goals.</p>
+                    <a href="401k-vs-ira.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="card">
+                <img src="https://placehold.co/400x250?text=Emergency+Fund" alt="Emergency Fund">
+                <div class="card-content">
+                    <span class="tag">Saving</span>
+                    <h3>The Ultimate Guide to Emergency Funds</h3>
+                    <p>Why you need a financial safety net and exactly how to build one quickly.</p>
+                    <a href="emergency-fund-guide.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="card">
+                <img src="https://placehold.co/400x250?text=Credit+Score" alt="Credit Score">
+                <div class="card-content">
+                    <span class="tag">Tools</span>
+                    <h3>Demystifying Your Credit Score</h3>
+                    <p>Understanding FICO scores and how to improve them for better loan rates.</p>
+                    <a href="credit-score-explained.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="card">
+                <img src="https://placehold.co/400x250?text=Compound+Interest" alt="Compound Interest">
+                <div class="card-content">
+                    <span class="tag">Investing</span>
+                    <h3>The Magic of Compound Interest</h3>
+                    <p>How starting early can turn small savings into millions over time.</p>
+                    <a href="compound-interest-power.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <!-- Article 7 -->
+            <article class="card">
+                <img src="https://placehold.co/400x250?text=ETFs+vs+Mutual+Funds" alt="ETFs vs Mutual Funds">
+                <div class="card-content">
+                    <span class="tag">Investing</span>
+                    <h3>ETFs vs. Mutual Funds</h3>
+                    <p>Comparing fees, flexibility, and strategy to find the best fit for your portfolio.</p>
+                    <a href="etfs-vs-mutual-funds.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <!-- Article 8 -->
+            <article class="card">
+                <img src="https://placehold.co/400x250?text=Buying+Home" alt="Buying a Home">
+                <div class="card-content">
+                    <span class="tag">Real Estate</span>
+                    <h3>First-Time Home Buyer's Guide</h3>
+                    <p>Steps to navigate the housing market, mortgages, and closing costs.</p>
+                    <a href="first-home-buying-guide.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <!-- Article 9 -->
+            <article class="card">
+                <img src="https://placehold.co/400x250?text=Debt+Payoff" alt="Debt Payoff">
+                <div class="card-content">
+                    <span class="tag">Debt</span>
+                    <h3>Snowball vs. Avalanche Method</h3>
+                    <p>Two proven strategies to eliminate debt and which one works best for you.</p>
+                    <a href="debt-payoff-strategies.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <!-- Article 10 -->
+            <article class="card">
+                <img src="https://placehold.co/400x250?text=Passive+Income" alt="Passive Income">
+                <div class="card-content">
+                    <span class="tag">Income</span>
+                    <h3>7 Real Passive Income Ideas</h3>
+                    <p>Legitimate ways to earn money while you sleep, from dividends to digital products.</p>
+                    <a href="passive-income-ideas.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <!-- Article 11 -->
+            <article class="card">
+                <img src="https://placehold.co/400x250?text=FIRE+Movement" alt="FIRE Movement">
+                <div class="card-content">
+                    <span class="tag">Lifestyle</span>
+                    <h3>Introduction to the FIRE Movement</h3>
+                    <p>Financial Independence, Retire Early: Is extreme saving worth the freedom?</p>
+                    <a href="fire-movement-guide.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <!-- Article 12 -->
+            <article class="card">
+                <img src="https://placehold.co/400x250?text=Tax+Investing" alt="Tax Investing">
+                <div class="card-content">
+                    <span class="tag">Investing</span>
+                    <h3>Tax-Efficient Investing Strategies</h3>
+                    <p>Keep more of your returns by understanding capital gains and tax-advantaged accounts.</p>
+                    <a href="tax-efficient-investing.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <!-- Article 13 -->
+            <article class="card">
+                <img src="https://placehold.co/400x250?text=Robo+Advisors" alt="Robo Advisors">
+                <div class="card-content">
+                    <span class="tag">Tools</span>
+                    <h3>Robo-Advisors vs. Human Advisors</h3>
+                    <p>Do you need a personal financial planner or can an algorithm do the job?</p>
+                    <a href="robo-vs-human-advisors.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Join Our Newsletter</h2>
+        <p style="margin-bottom: 1.5rem;">Get the latest financial tips delivered straight to your inbox.</p>
+        <form>
+            <input type="email" placeholder="Enter your email address">
+            <button type="submit" class="btn">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ManishMeena.in. All rights reserved.</p>
+        <div style="margin-top: 1rem;">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </footer>
+
+</body>
+</html>

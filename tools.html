@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools - ManishMeena.in</title>
+    <style>
+        :root { --primary-color: #0f5132; --secondary-color: #198754; --accent-color: #ffc107; --text-dark: #212529; --text-light: #f8f9fa; --bg-light: #f3f4f6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-dark); background-color: #fff; }
+        nav { background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-color); text-decoration: none; }
+        .nav-links a { margin-left: 2rem; text-decoration: none; color: var(--text-dark); font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--secondary-color); }
+        .menu-icon { display: none; font-size: 1.5rem; cursor: pointer; color: var(--primary-color); }
+        .page-header { background-color: var(--bg-light); padding: 4rem 5%; text-align: center; }
+        .page-header h1 { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem; }
+        .container { padding: 4rem 5%; max-width: 1200px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; transition: box-shadow 0.3s; }
+        .card:hover { box-shadow: 0 8px 12px rgba(0,0,0,0.15); }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card-content { padding: 1.5rem; }
+        .tag { background-color: var(--bg-light); color: var(--secondary-color); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem; text-transform: uppercase; font-weight: bold; }
+        .card h3 { margin: 1rem 0; font-size: 1.25rem; }
+        .card p { color: #666; font-size: 0.95rem; margin-bottom: 1rem; }
+        .read-more { color: var(--secondary-color); text-decoration: none; font-weight: bold; }
+        footer { background-color: var(--text-dark); color: var(--text-light); padding: 3rem 5%; text-align: center; }
+        footer a { color: #ccc; text-decoration: none; margin: 0 10px; }
+        @media (max-width: 768px) {
+            .menu-icon { display: block; }
+            .nav-links { display: none; width: 100%; position: absolute; top: 100%; left: 0; background: #fff; flex-direction: column; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 1rem 0; }
+            .nav-links.active { display: flex; }
+            .nav-links a { margin: 0.5rem 0; text-align: center; margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">ManishMeena.in</a>
+        <div class="menu-icon" onclick="document.querySelector('.nav-links').classList.toggle('active')">&#9776;</div>
+        <div class="nav-links">
+            <a href="investing.html">Investing</a>
+            <a href="saving.html">Saving</a>
+            <a href="retirement.html">Retirement</a>
+            <a href="tools.html">Tools</a>
+        </div>
+    </nav>
+    <header class="page-header">
+        <h1>Financial Tools</h1>
+        <p>Resources to help you manage your money better.</p>
+    </header>
+    <section class="container">
+        <div class="grid">
+            <article class="card">
+                <img src="https://placehold.co/400x250?text=Credit+Score" alt="Credit Score">
+                <div class="card-content">
+                    <span class="tag">Tools</span>
+                    <h3>Demystifying Your Credit Score</h3>
+                    <p>Understanding FICO scores and how to improve them for better loan rates.</p>
+                    <a href="credit-score-explained.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://placehold.co/400x250?text=Robo+Advisors" alt="Robo Advisors">
+                <div class="card-content">
+                    <span class="tag">Tools</span>
+                    <h3>Robo-Advisors vs. Human Advisors</h3>
+                    <p>Do you need a personal financial planner or can an algorithm do the job?</p>
+                    <a href="robo-vs-human-advisors.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 ManishMeena.in. All rights reserved.</p>
+        <div style="margin-top: 1rem;">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </footer>
+</body>
+</html>
