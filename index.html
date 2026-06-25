@@ -1,120 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manish Meena | ConnectWithMan</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <style>
-        :root {
-            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --card-bg: #ffffff;
-            --text-primary: #2d3748;
-            --text-secondary: #718096;
-            --accent-color: #764ba2;
-            --hover-bg: #f7fafc;
-        }
+    <!-- SEO Meta Tags -->
+    <title>Manish Meena - IT Engineer & Consultant</title>
+    <meta name="description"
+        content="Professional bio and links for Manish Meena, IT Engineer & Consultant. Specializing in IT infrastructure, cloud systems, and technology consulting.">
+    <meta name="author" content="Manish Meena">
+    <meta name="theme-color" content="#080b11" id="themeColorMeta">
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background: var(--bg-gradient);
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Manish Meena | IT Engineer & Consultant">
+    <meta property="og:description"
+        content="Designing robust IT infrastructure, cloud systems, and tech consulting solutions. Let's connect.">
+    <meta property="og:image" content="profile.png">
 
-        .container {
-            background-color: var(--card-bg);
-            width: 100%;
-            max-width: 400px;
-            padding: 40px 20px;
-            border-radius: 24px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Manish Meena | IT Engineer & Consultant">
+    <meta property="twitter:description"
+        content="Designing robust IT infrastructure, cloud systems, and tech consulting solutions. Let's connect.">
 
-        .username {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin: 0 0 8px 0;
-        }
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="profile.png">
 
-        .bio {
-            font-size: 14px;
-            color: var(--text-secondary);
-            margin: 0 0 32px 0;
-            line-height: 1.6;
-        }
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
-        .link-list {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .link-item {
-            display: block;
-            padding: 16px;
-            background-color: white;
-            border: 2px solid #e2e8f0;
-            color: var(--text-primary);
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: 600;
-            transition: all 0.2s ease;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        .link-item:hover {
-            background-color: var(--accent-color);
-            color: white;
-            border-color: var(--accent-color);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(118, 75, 162, 0.3);
-        }
-
-        .social-links {
-            margin-top: 32px;
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-        }
-
-        .social-icon {
-            color: var(--text-secondary);
-            font-size: 24px;
-            transition: color 0.2s, transform 0.2s;
-            text-decoration: none;
-        }
-
-        .social-icon:hover {
-            color: var(--accent-color);
-            transform: translateY(-2px);
-        }
-    </style>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <h1 class="username">Manish Meena</h1>
-        <p class="bio">contact@ManishMeena.in</p>
-        
-        <div class="link-list">
-            <a href="https://www.famral.com/" class="link-item">Web Development & IT Services</a>
-            <a href="https://tools.famral.com/" class="link-item">Online Tools</a>
-            <a href="https://reap2026.in/" class="link-item">REAP 2026 Updates</a>
-            <a href="https://www.sciencebaba.com/" class="link-item">News & Updates</a>
-        </div>
 
-        <div class="social-links">
-            <a href="https://www.instagram.com/connectwithman/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://x.com/ConnectWithMan" class="social-icon" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/connectwithman/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </div>
+<body>
+
+    <!-- Background Animated Glow Blobs -->
+    <div class="bg-glow-container">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
     </div>
+
+    <!-- App Container -->
+    <div class="app-container">
+
+        <!-- Top Action Navigation Bar -->
+        <nav class="top-actions" aria-label="Quick Actions">
+            <button id="themeToggle" class="icon-btn theme-toggle-btn" aria-label="Toggle dark and light theme"
+                title="Toggle Theme">
+                <!-- Moon Icon (Dark Mode Active) -->
+                <svg class="moon-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <!-- Sun Icon (Light Mode Active) -->
+                <svg class="sun-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+
+            <button id="shareBtn" class="icon-btn" aria-label="Share this profile" title="Share Profile">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="19" r="3"></circle>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Profile Header Section -->
+        <header class="profile-header">
+            <div class="avatar-container">
+                <div class="avatar-ring" aria-hidden="true"></div>
+                <div class="avatar-img-wrapper">
+                    <img src="./profile.png" alt="Manish Meena Portrait" class="profile-avatar" id="profileAvatar"
+                        onerror="
+              if (this.src.indexOf('profile.png') !== -1) {
+                // If local relative image fails, try loading the generated file path directly
+                this.src = 'file:///C:/Users/conne/.gemini/antigravity-ide/brain/00b41bf7-3045-4d1c-b16e-8a66754361dc/profile_portrait_1782347018052.png';
+              } else {
+                // If both fail, gracefully fallback to a beautiful stylized SVG avatar
+                this.style.display = 'none';
+                document.getElementById('avatarSvg').style.display = 'block';
+              }
+            ">
+                    <!-- Stylized Inline SVG Avatar Silhouette (Fallback) -->
+                    <svg id="avatarSvg" class="avatar-svg-fallback" viewBox="0 0 100 100" style="display: none;"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="svgAvatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#6366f1" />
+                                <stop offset="100%" stop-color="#a855f7" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="100" height="100" fill="url(#svgAvatarGrad)" />
+                        <circle cx="50" cy="40" r="18" fill="#ffffff" opacity="0.9" />
+                        <path d="M50 62 c-18 0 -30 10 -30 22 c0 5 4 8 8 8 h44 c4 0 8 -3 8 -8 c0 -12 -12 -22 -30 -22 z"
+                            fill="#ffffff" opacity="0.9" />
+                        <circle cx="50" cy="50" r="47" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.3" />
+                    </svg>
+                </div>
+                <div class="status-badge" aria-label="Online status indicator" title="Available for hire"></div>
+            </div>
+
+            <div class="profile-info">
+                <h1>Manish Meena</h1>
+                <p class="profile-tagline">IT Engineer & Consultant</p>
+                <p class="profile-bio">
+                    Building secure and reliable IT solutions.
+                </p>
+                <div class="meta-badges">
+                    <span class="badge">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+                        Jaipur, India
+                    </span>
+                    <span class="badge">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 9h-5v5h-2v-5H5v-2h5V6h2v5h5v2z" />
+                        </svg>
+                        Available Remote
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Primary Calls to Action (CTAs) -->
+        <section class="primary-actions" aria-label="Primary actions">
+            <a href="mailto:contact@manishmeena.in" id="contactBtn" class="btn btn-primary"
+                aria-label="Send email to contact@manishmeena.in">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z">
+                    </path>
+                </svg>
+                Send Message
+            </a>
+        </section>
+
+        <!-- Link Feed Section (Cards Design) -->
+        <main class="links-section" aria-label="Social and Professional Links">
+            <h2 class="section-label">Connect with me</h2>
+
+            <!-- 1. Portfolio Card -->
+            <a href="https://www.famral.com/" target="_blank" rel="noopener noreferrer" class="link-card"
+                id="portfolioCard" aria-label="Visit portfolio website">
+                <div class="card-icon-container" aria-hidden="true">
+                    <!-- Globe / Portfolio Icon -->
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="card-info">
+                    <span class="card-title">Professional Website</span>
+                    <span class="card-description">Explore my portfolio, blog articles, and consulting services.</span>
+                </div>
+                <div class="card-arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- 2. LinkedIn Card -->
+            <a href="https://www.linkedin.com/in/connectwithman/" target="_blank" rel="noopener noreferrer"
+                class="link-card" id="linkedinCard" aria-label="Connect on LinkedIn">
+                <div class="card-icon-container" aria-hidden="true">
+                    <!-- LinkedIn Icon -->
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </div>
+                <div class="card-info">
+                    <span class="card-title">LinkedIn</span>
+                    <span class="card-description">Connect for professional opportunities, projects, and
+                        insights.</span>
+                </div>
+                <div class="card-arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- 3. GitHub Card -->
+            <a href="https://github.com/ConnectWithMan" target="_blank" rel="noopener noreferrer" class="link-card"
+                id="githubCard" aria-label="Check out GitHub profile">
+                <div class="card-icon-container" aria-hidden="true">
+                    <!-- GitHub Icon -->
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </div>
+                <div class="card-info">
+                    <span class="card-title">GitHub Developer Hub</span>
+                    <span class="card-description">Review my open-source codebases, libraries, and boilerplates.</span>
+                </div>
+                <div class="card-arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- 4. Twitter / X Card -->
+            <a href="https://x.com/ConnectWithMan" target="_blank" rel="noopener noreferrer" class="link-card"
+                id="twitterCard" aria-label="Follow on Twitter X">
+                <div class="card-icon-container" aria-hidden="true">
+                    <!-- X Icon (Twitter) -->
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </div>
+                <div class="card-info">
+                    <span class="card-title">Twitter / X</span>
+                    <span class="card-description">Read my thoughts on modern web tech, system design, and AI.</span>
+                </div>
+                <div class="card-arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- 5. Instagram Card -->
+            <a href="https://www.instagram.com/connectwithman/" target="_blank" rel="noopener noreferrer"
+                class="link-card" id="instagramCard" aria-label="Follow on Instagram">
+                <div class="card-icon-container" aria-hidden="true">
+                    <!-- Instagram Icon -->
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                    </svg>
+                </div>
+                <div class="card-info">
+                    <span class="card-title">Instagram</span>
+                    <span class="card-description">Follow for visual updates, behind-the-scenes projects, and daily
+                        life.</span>
+                </div>
+                <div class="card-arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </div>
+            </a>
+        </main>
+
+        <!-- Footer -->
+        <footer class="profile-footer">
+            <div class="footer-brand">Manish Meena</div>
+            <div>© All Rights Reserved.</div>
+        </footer>
+    </div>
+
+    <!-- Toast Alert Notification -->
+    <div id="toastNotification" class="toast" role="alert" aria-live="polite">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+        </svg>
+        <span class="toast-text">Link copied!</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
 </body>
+
 </html>
